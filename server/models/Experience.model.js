@@ -6,7 +6,7 @@ const experienceSchema = new Schema({
         type: String,
         required: true
     },
-    terrace: { type: Schema.Types.ObjectId, ref: 'Terrace' },
+    terrace: { type: Schema.Types.ObjectId, ref: 'Terrace', required: true },
     comments: {
         isPositive: Boolean,
         type: String,
@@ -29,7 +29,7 @@ const experienceSchema = new Schema({
             required: true,
             default: false
         },
-        imageUrl: {
+        image: {
             type: String,
             //TO-DO required: true,
             default: ''
@@ -47,7 +47,7 @@ const experienceSchema = new Schema({
         },
 
     }
-}, {timestamps: true}
+}, { timestamps: true }
 )
 const Experience = model("Experience", experienceSchema)
 

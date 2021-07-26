@@ -6,6 +6,7 @@ const Terrace = require('../models/Terrace.model')
 
 //Muestra todas las experencias
 router.get('/', (req, res) => {
+
     Experience
         .find(req.query)
         .populate("terrace")
@@ -25,7 +26,8 @@ router.get('/:id', (req, res, next) => {
 // Experiencia Nueva. Crear reseñas.
 
 router.post('/new', (req, res) => {
-    const { username,terrace, comments } = req.body
+    console.log(req.body)
+    const { username, terrace, comments } = req.body
 
     const user = req.session.currentUser._id
 
@@ -33,14 +35,14 @@ router.post('/new', (req, res) => {
         tableDistance: req.body.tableDistance ? req.body.tableDistance : '',
         booking: req.body.booking ? true : false,
         music: req.body.music ? true : false,
-        outdoors: req.body.outdoors ? req.body.outdoors  : '',
+        outdoors: req.body.outdoors ? req.body.outdoors : '',
         image: req.body.image ? req.body.image : '',
     }
 
     //const experience ={username,comments,rating} =req.body
-
+    
     Experience
-        .create({ username, terrace, features, comments})
+        .create({ username, terrace, features, comments })
         .then(newExperience => res.json(newExperience))
         .catch(err => console.error(err))
 
