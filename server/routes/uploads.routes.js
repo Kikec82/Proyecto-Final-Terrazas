@@ -1,17 +1,18 @@
-const upload = multer({ dest: './public/uploads/' });
 
-router.post('/upload', upload.single('image'), (req, res) => {
+const express = require('express')
+const router = express.Router()
 
-    res.json("url_de_img_cloudinary")
+const { CDNupload } = require('../config/cloudinary.config')
 
-    const pic = new Picture({
-        name: req.body.name,
-        path: `/uploads/${req.file.filename}`,
-        originalName: req.file.originalname
-    });
+router.post('/image', CDNupload.single("imageData"), (req, res) => {
 
-    pic.save((err) => {
-        res.redirect('/');
-    });
-});
+    if (!req.file) {
+        res.status(500).json({ code: 500, message: 'Error loading the file' })
+        return
+    }
 
+    res.json({ cloudinary_url: req.file.path })
+})
+
+
+module.exports = router;

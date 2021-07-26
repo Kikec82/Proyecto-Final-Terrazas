@@ -6,7 +6,7 @@ const User = require('../models/User.model')
 
 //Signup (post)
 
-router.post('/signup', (req, res) => {
+router.post('/signup', CDNupload.single("imageData"),(req, res) => {
     //TO-DO ARREGLAR falla si el email esta repe
     const { username, pwd, city, email, image } = req.body
     let path

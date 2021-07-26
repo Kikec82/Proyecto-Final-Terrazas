@@ -40,7 +40,6 @@ router.post('/new', (req, res) => {
     }
 
     //const experience ={username,comments,rating} =req.body
-    
     Experience
         .create({ username, terrace, features, comments })
         .then(newExperience => res.json(newExperience))
