@@ -6,15 +6,9 @@ const User = require('../models/User.model')
 
 //Signup (post)
 
-router.post('/signup', CDNupload.single("imageData"),(req, res) => {
+router.post('/signup', (req, res) => {
     //TO-DO ARREGLAR falla si el email esta repe
     const { username, pwd, city, email, image } = req.body
-    let path
-    if (req.file === undefined) {
-        path = req.session.currentUser.image
-    } else {
-        path = req.file.path
-    }
 
 
     User
@@ -30,7 +24,7 @@ router.post('/signup', CDNupload.single("imageData"),(req, res) => {
             const hashPass = bcrypt.hashSync(pwd, salt)
 
             User
-                .create({ username, password: hashPass, city, email, image: path })
+                .create({ username, password: hashPass, city, email, image })
                 .then((user) => {
                     res.json(user)
                     console.log(path)

@@ -43,7 +43,7 @@ const experienceSchema = new Schema({
         outdoors: {
             type: String,
             required: true,
-            default: ''
+            default: 'Abierta'
         },
 
     }

@@ -27,7 +27,7 @@ router.get('/:id', (req, res, next) => {
 
 router.post('/new', (req, res) => {
     console.log(req.body)
-    const { username, terrace, comments } = req.body
+    const { terrace, comments } = req.body
 
     const user = req.session.currentUser._id
 
@@ -41,7 +41,7 @@ router.post('/new', (req, res) => {
 
     //const experience ={username,comments,rating} =req.body
     Experience
-        .create({ username, terrace, features, comments })
+        .create({ username: req.session.currentUser.username, terrace, features, comments })
         .then(newExperience => res.json(newExperience))
         .catch(err => console.error(err))
 
