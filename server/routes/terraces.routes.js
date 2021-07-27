@@ -36,13 +36,32 @@ router.post('/new', (req, res) => {
         outdoors: req.body.outdoors ? req.body.outdoors : '',
     }
 
-    //const experience ={username,comments,rating} =req.body
-
+    console.log(terraceName, "EL NOMBRE")
     Terrace
-        .create({ user, terraceName, terraceCity, features, rating })
-        .then(newTerrace => res.json(newTerrace))
-        .catch(err => console.error(err))
-})
+        .findOne({ terraceName })
+        .then(terrace => {
+            if (terrace) {
+                terrace.numberOfRatings += 1
+                terrace.rating = parseInt(terrace.rating) + parseInt(rating) / terrace.numberOfRatings
 
+                Terrace.findByIdAndUpdate(terrace._id, terrace)
+
+                res.json(terrace)
+                return
+
+            }
+
+
+            //Primer un find por terraceName
+            //si la terraza ya existe res.json de la terraza
+
+            //si la terraza es null creamos terraza
+            Terrace
+                .create({ user, terraceName, terraceCity, features, rating: parseFloat(rating) })
+                .then(newTerrace => res.json(newTerrace))
+                .catch(err => console.error(err))
+        }
+        )
+})
 
 module.exports = router

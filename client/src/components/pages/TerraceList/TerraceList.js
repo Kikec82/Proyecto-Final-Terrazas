@@ -6,33 +6,33 @@ import { Link } from 'react-router-dom'
 
 
 class TerraceList extends Component {
-
+    
     constructor() {
         super()
         this.state = {
             terraces: [],
             experiences: []
-
+            
         }
         this.terracesService = new TerracesService()
-
-
+        
+        
     }
-
+    
     loadTerraces = () => {
         this.terracesService
-            .getTerraces()
-            .then(response => this.setState({ terraces: response.data }))
-            .catch(err => console.log(err))
+        .getTerraces()
+        .then(response => this.setState({ terraces: response.data }))
+        .catch(err => console.log(err))
     }
-
-
+    
+    
     componentDidMount = () => {
         this.loadTerraces()
-
-
+        
+        
     }
-
+    
     render() {
         return (
             <div className="tabla">
@@ -57,6 +57,7 @@ class TerraceList extends Component {
                                     <td className="ratingTable">{elm.rating}</td>
                                     <td className="detailTable"><Link to={`/terracedetails/${elm._id}`}> <Button variant="link"> Ver detalles </Button></Link></td>
                                 </tr>
+           
 
                             ))}
                         </tbody>

@@ -17,7 +17,7 @@ class EditProfile extends Component {
             path: ''
         }
         this.authService = new AuthService()
-        
+
         // this.getProfile(this.loggedUser)
     }
 
@@ -39,7 +39,7 @@ class EditProfile extends Component {
         const { username, pwd, city, email, image } = this.state
 
         this.authService
-            .editProfile(id,{ username, pwd, city, email, image })
+            .editProfile(id, { username, pwd, city, email, image })
             .then(() => this.props.history.push('/login'))          // Redirect with RRD props
             .catch(err => console.log(err))
     }
@@ -62,13 +62,13 @@ class EditProfile extends Component {
 
                         <h4>Usuario</h4> <input type="text" name="username" onChange={e => this.handleChange(e)} value={this.state.username} />
                         <h4>Contraseña</h4> <input type="password" name="pwd" onChange={e => this.handleChange(e)} value={this.state.pwd} />
-                        <h4>Email</h4> <input type="text" name="email" onChange={e => this.handleChange(e)} value={this.state.email}/>
+                        <h4>Email</h4> <input type="text" name="email" onChange={e => this.handleChange(e)} value={this.state.email} />
                         <h4>Foto de perfil</h4> <input type="file" name="image" onChange={e => this.handleChange(e)} value={this.state.image} />
                         <h4>Ciudad</h4> <input type="text" name="city" onChange={e => this.handleChange(e)} value={this.state.city} />
 
+                        <button className="btn btn-success"> Modificar </button>
                     </form>
                     <br></br>
-                        <button className="btn btn-success"> Modificar </button>
                 </div>
             </Container>
 

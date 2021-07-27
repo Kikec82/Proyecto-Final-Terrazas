@@ -9,7 +9,7 @@ require("./config")(app)
 require("./config/cors.config")(app)
 require("./config/session.config")(app)
 
-require('./routes')(app)
+require("./routes")(app)
 
 
 

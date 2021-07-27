@@ -36,9 +36,6 @@ router.post('/edit/:userId', CDNupload.single('image'), (req, res) => {
 
     const { userId } = req.params
 
-    // console.log('---------->', userId)
-    // console.log('Esta informacin me est llegando', req.body)
-
     User
         .findByIdAndUpdate(userId, { username, pwd,city, email, image: path })
         .then(() => {

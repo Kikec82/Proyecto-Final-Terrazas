@@ -149,7 +149,7 @@ class NewTerraceReview extends Component {
                         </Form.Group>
 
                         <br></br>
-                        <Button type="submit"> Guardar </Button>
+                        <Button disabled={this.state.loading} type="submit"> Guardar </Button>
                     </div>
                 </Form>
             </div>

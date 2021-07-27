@@ -11,11 +11,16 @@ const terraceSchema = new Schema(
       required: true
     },
     rating: {
-      type: String,
+      type: Number,
       // required: true,
       min: 1,
       max: 10
     },
+    numberOfRatings: {
+      type: Number,
+      default: 0,
+      required: true
+    }
   },
   { timestamps: true }
 )

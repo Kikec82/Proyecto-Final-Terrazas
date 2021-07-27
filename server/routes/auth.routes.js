@@ -70,17 +70,17 @@ router.post('/editProfile/:userId', CDNupload.single('image'), (req, res) => {
     const { userId } = req.params
 
     User
-        .findByuserIdAndUpdate(userId, { username, pwd, email, image, city, image: path })
+        .findByIdAndUpdate(userId, { username, pwd, email, image, city, image: path })
         .then(() => {
-            res.redirect('/profile')
+            res.json('/profile')
         })
         .catch(err => console.log(err))
 })
 //Edit Profile (get)
 router.get('/editProfile/:userId', CDNupload.single('image'), (req, res) => {
-   
+
     User
-    
+
         .findById(req.params.userId)
         .then(response => {
             console.log(response)

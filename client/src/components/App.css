@@ -36,12 +36,19 @@ main {
   width:150px;
   text-align: center;
 }
+/* Formulario de crear terraza */
 .inputForm {
   width:400px;
   background: #07ab8d;
   border: 2px solid #34495e;
   color: #fff;
   padding: 5px 5px;
+}
+.newTerraceForm{
+ display:flex;
+  align-items:center;
+justify-content: center;
+padding-top: 10px;
 }
 
 /* Login */
@@ -116,12 +123,7 @@ position: absolute;
   width: 400px;
 }
 /* Formulario nueva terraza */
-.newTerraceForm{
- display:flex;
-  align-items:center;
-justify-content: center;
-padding-top: 10px;
-}
+
 
 /* Selección reserva y musica */
 .selections{
@@ -169,8 +171,5 @@ padding-top: 10px;
 }
 
 
-.details{
-  align-items:center;
-  justify-content: center;
-}
+
 

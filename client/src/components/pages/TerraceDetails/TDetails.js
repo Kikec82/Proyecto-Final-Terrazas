@@ -50,7 +50,7 @@ class TDetails extends Component {
                                 {this.state.experience.map(elm => (
 
                                     <Card border="primary" style={{ width: '18rem' }}>
-                                        {/* <Card.Img variant="top" src={elm.imageFile} /> */}
+                                        <Card.Img variant="top" src={elm.features.image} />
                                         <div className="details">
                                             <Card.Body>
                                                 <Card.Text>
@@ -61,7 +61,7 @@ class TDetails extends Component {
 
                                         <ListGroup className="list-group-flush">
                                             <ListGroupItem>Ciudad:{this.state.terrace.terraceCity} </ListGroupItem>
-                                            <ListGroupItem> imgFoto:{elm.features.image} </ListGroupItem>
+                                            {/* <ListGroupItem> Foto:{elm.features.image} </ListGroupItem> */}
                                             <ListGroupItem>Distancia entre mesas: {elm.features.tableDistance}</ListGroupItem>
                                             <ListGroupItem>Reservas: {elm.features.booking ? "Sí" : "No"} </ListGroupItem>
                                             <ListGroupItem>Música: {elm.features.music ? "Si" : "No"}</ListGroupItem>
@@ -71,24 +71,14 @@ class TDetails extends Component {
                                     </Card>
                                 ))}
                                 <br></br>
-                                <Link to="/terraceList"  className="btn btn-dark">Volver al listado</Link>
+                                <Link to="/terraceList" className="btn btn-dark">Volver al listado</Link>
                             </Col>
                         </Row>
 
                     </>
-
-
-
                 }
-
             </Container>
-
-
-
         )
-
     }
-
-
 }
 export default TDetails
