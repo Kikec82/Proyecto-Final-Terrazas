@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper,Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 export class Maps extends Component {
 
     render() {
         return (
-            
 
-            <Map 
-                style={{ width: '30%', height: '30%' }}
-                initialCenter={{ lat: 40.4235104, lng: -3.6796021 }}
+
+            <Map
+                style={{ width: '60%', height: '30%' }}
+                initialCenter={{ lat: this.props.terrace.location?.coordinates[0] || 40.4235104, lng: this.props.terrace.location?.coordinates[1] || -3.6796021 }}
                 zoom={14}
                 google={this.props.google}
             >
-            <Marker
+                <Marker
                     title={'The marker`s title will appear as a tooltip.'}
                     name={'100 montaditos'}
-                    position={{ lat: 37.778519, lng: -122.405640 }} />
-            <Marker />
+                    position={{ lat: this.props.terrace.location?.coordinates[0] || 37.778519, lng: this.props.terrace.location?.coordinates[1] || -3.4056404 }} />
+                <Marker />
 
             </Map>
-           
+
         );
     }
 }

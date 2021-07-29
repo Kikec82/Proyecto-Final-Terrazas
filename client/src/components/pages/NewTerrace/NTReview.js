@@ -33,9 +33,15 @@ class NewTerraceReview extends Component {
     handleFormSubmit = e => {
         e.preventDefault()
 
-        const { terrace, terraceCity, terraceName, comments, rating, tableDistance, booking, music, outdoors, image, lat, lng} = this.state
+        const { terrace, terraceCity, terraceName,
+            comments, rating, tableDistance, booking,
+            music, outdoors, image, lat, lng } = this.state
 
-        this.saveExperience({ terrace, terraceCity, terraceName, comments, rating, tableDistance, booking, music, outdoors, image })
+        this.saveExperience({
+            lat, lng, terrace,
+            terraceCity, terraceName, comments, rating, tableDistance,
+            booking, music, outdoors, image
+        })
     }
 
 
@@ -85,7 +91,7 @@ class NewTerraceReview extends Component {
             })
             .catch(err => console.log(err))
     }
-    
+
 
 
 
@@ -102,15 +108,15 @@ class NewTerraceReview extends Component {
 
                             <Form.Label>Ciudad</Form.Label>
                             <Form.Control type="text" value={this.state.terraceCity} onChange={this.handleChange} name="terraceCity" />
-
+                            
                             <Form.Label>Latitud </Form.Label>
                             <Form.Control value={this.state.lat} onChange={this.handleChange} name="lat" />
                             <Form.Label>Longitud </Form.Label>
                             <Form.Control value={this.state.lng} onChange={this.handleChange} name="lng" />
                             <Form.Label>Ubicación GPS</Form.Label>
                             <LocationSearchInput></LocationSearchInput>
-                            
-                            
+
+
                             <Form.Label>Puntuación</Form.Label>
                             <Form.Control value={this.state.rating} onChange={this.handleChange} as="select" name="rating">
                                 <option value="1" >1</option>

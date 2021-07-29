@@ -40,7 +40,7 @@ export class LocationSearchInput extends React.Component {
                             })}
                         />
                         <div className="autocomplete-dropdown-container">
-                            {loading && <div>Loading...</div>}
+                            {loading && <div>Cargando...</div>}
                             {suggestions.map(suggestion => {
                                 const className = suggestion.active
                                     ? 'suggestion-item--active'

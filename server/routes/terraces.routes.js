@@ -26,7 +26,7 @@ router.get('/:id', (req, res, next) => {
 //Terrazas nuevas. Crear reseña 
 
 router.post('/new', (req, res) => {
-    const { terraceName, terraceCity, rating,lat,lng } = req.body
+    const { terraceName, terraceCity, rating, lat, lng } = req.body
     const user = req.session.currentUser._id
 
     const { tableDistance, booking, music, outdoors } = req.body
@@ -37,6 +37,10 @@ router.post('/new', (req, res) => {
         outdoors: outdoors || '',
     }
 
+    const location = {
+        type: "Point",
+        coordinates: [lat, lng]
+    }
 
     Terrace
         .findOne({ terraceName })
@@ -55,7 +59,7 @@ router.post('/new', (req, res) => {
             }
 
             Terrace
-                .create({ user, terraceName, terraceCity, features, rating: parseFloat(rating) })
+                .create({ location, user, terraceName, terraceCity, features, rating: parseFloat(rating) })
                 .then(newTerrace => res.json(newTerrace))
                 .catch(err => console.error(err))
         }

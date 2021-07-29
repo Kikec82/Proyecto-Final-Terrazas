@@ -46,39 +46,45 @@ class TDetails extends Component {
                     :
                     <>
                         <h3>{this.state.terrace.terraceName}</h3>
-                        
-                      
-                        <Maps terrace={this.state.terrace}></Maps>
-                      
-                        
+
+
+
+
+
                         <Row className="justify-content-center">
                             {this.state.experience.map(elm => (
-                                <Col sm={3}>
+                                <Col sm={4}>
 
-                                    <Card border="success" style={{ width: '25rem' }}>
+                                    <Card border="success" style={{ width: '350px', height: '550px' }}>
                                         <Card.Img variant="top" src={elm.features.image} />
 
-                                        <ListGroup className="list-group-flush">
-                                            <ListGroupItem>Ciudad:{this.state.terrace.terraceCity} </ListGroupItem>
-                                            <ListGroupItem>Distancia entre mesas: {elm.features.tableDistance}</ListGroupItem>
-                                            <ListGroupItem>Reservas: {elm.features.booking ? "Sí" : "No"} </ListGroupItem>
-                                            <ListGroupItem>Música: {elm.features.music ? "Si" : "No"}</ListGroupItem>
-                                            <ListGroupItem>Espacio:  {elm.features.outdoors}</ListGroupItem>
+                                        <ListGroup className="list-group-flush tarjeta">
+                                            <ListGroupItem><b>Ciudad: </b> {this.state.terrace.terraceCity} </ListGroupItem>
+                                            <ListGroupItem><b>Distancia entre mesas:</b> {elm.features.tableDistance}</ListGroupItem>
+                                            <ListGroupItem><b>Reservas:</b> {elm.features.booking ? "Sí" : "No"} </ListGroupItem>
+                                            <ListGroupItem><b>Música:</b> {elm.features.music ? "Si" : "No"}</ListGroupItem>
+                                            <ListGroupItem><b>Espacio: </b> {elm.features.outdoors}</ListGroupItem>
+                                            <ListGroupItem><b>Comentarios:</b> {elm.comments}</ListGroupItem>
                                         </ListGroup>
 
-                                            <Card.Body>
-                                        <div className="comments">
-                                                <Card.Text>
-                                                    Comentarios: <br></br> {elm.comments}
-                                                </Card.Text>
-                                        </div>
-                                            </Card.Body>
+
                                     </Card>
                                 </Col>
                             ))}
-                            <br></br>
-                            <Link to="/terraceList" className="btn btn-dark">Volver al listado</Link>
                         </Row>
+
+                        <div className="abajo">
+                            <div className="regreso">
+                                <Link to="/terraceList" className="btn btn-dark regreso">Volver al listado</Link>
+                            </div>
+                            <div className="mapas">
+                                <h4>Ubicación</h4>
+                                <Maps terrace={this.state.terrace}></Maps>
+                            </div>
+                            
+                        </div>
+
+
 
                     </>
                 }
