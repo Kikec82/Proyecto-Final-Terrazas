@@ -2,7 +2,7 @@
 
 Id |	Method |	Path |	Description
 ---|---------|-------|-------------
-1	 | get  |	/ |  	Página de Inicio
+1	 | get  |	/ |  	Página de Inicio 
 2	 | post	| /signup |	Registrarse
 3  | get	| /login	|Iniciar sesión
 4	 | post	| /login | Guarda la sesión
