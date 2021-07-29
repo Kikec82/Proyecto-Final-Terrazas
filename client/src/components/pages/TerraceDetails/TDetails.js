@@ -3,6 +3,7 @@ import { Card, ListGroupItem, ListGroup, Container, Row, Col } from "react-boots
 import { Link } from 'react-router-dom'
 import TerracesService from './../../../services/terraces.service'
 import ExperiencesService from '../../../services/experience.service'
+import Maps from '../../GoogleMapReact.js/Maps'
 
 
 class TDetails extends Component {
@@ -45,34 +46,38 @@ class TDetails extends Component {
                     :
                     <>
                         <h3>{this.state.terrace.terraceName}</h3>
-                        <Row className="justify-content-space-around">
-                            <Col md={3}>
-                                {this.state.experience.map(elm => (
+                        
+                      
+                        <Maps terrace={this.state.terrace}></Maps>
+                      
+                        
+                        <Row className="justify-content-center">
+                            {this.state.experience.map(elm => (
+                                <Col sm={3}>
 
-                                    <Card border="primary" style={{ width: '18rem' }}>
+                                    <Card border="success" style={{ width: '25rem' }}>
                                         <Card.Img variant="top" src={elm.features.image} />
-                                        <div className="details">
-                                            <Card.Body>
-                                                <Card.Text>
-                                                    Comentarios: {elm.comments}
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </div>
 
                                         <ListGroup className="list-group-flush">
                                             <ListGroupItem>Ciudad:{this.state.terrace.terraceCity} </ListGroupItem>
-                                            {/* <ListGroupItem> Foto:{elm.features.image} </ListGroupItem> */}
                                             <ListGroupItem>Distancia entre mesas: {elm.features.tableDistance}</ListGroupItem>
                                             <ListGroupItem>Reservas: {elm.features.booking ? "Sí" : "No"} </ListGroupItem>
                                             <ListGroupItem>Música: {elm.features.music ? "Si" : "No"}</ListGroupItem>
                                             <ListGroupItem>Espacio:  {elm.features.outdoors}</ListGroupItem>
                                         </ListGroup>
 
+                                            <Card.Body>
+                                        <div className="comments">
+                                                <Card.Text>
+                                                    Comentarios: <br></br> {elm.comments}
+                                                </Card.Text>
+                                        </div>
+                                            </Card.Body>
                                     </Card>
-                                ))}
-                                <br></br>
-                                <Link to="/terraceList" className="btn btn-dark">Volver al listado</Link>
-                            </Col>
+                                </Col>
+                            ))}
+                            <br></br>
+                            <Link to="/terraceList" className="btn btn-dark">Volver al listado</Link>
                         </Row>
 
                     </>

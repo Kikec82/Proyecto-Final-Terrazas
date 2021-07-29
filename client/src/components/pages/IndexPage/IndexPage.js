@@ -1,25 +1,16 @@
 
 import { Container } from 'react-bootstrap'
-import { Component } from 'react'
 
-class IndexPage extends Component {
+function IndexPage() {
+  return (
 
-  render() {
-    return (
-      
-      <Container >
-     
-          <p>
-            Bienvenido al mejor buscador de terrazas, aquí encontrarás el lugar ideal acorde a tus necesidades.
-          </p>
+    <Container >
+      <p>Te damos la bienvenida a TuTerraza.com, aquí encontrarás el lugar idóneo donde podrás tomarte algo con la seguridad que buscas</p>
 
+      <img className="image image-cover" src="https://www.laguiago.com/wp-content/uploads/2019/06/terraza.jpg" alt="" />
 
-          <img className="image image-cover" src="https://www.laguiago.com/wp-content/uploads/2019/06/terraza.jpg" alt="" />
+    </Container>
 
-      
-        </Container>
-
-    )
-  }
+  )
 }
 export default IndexPage

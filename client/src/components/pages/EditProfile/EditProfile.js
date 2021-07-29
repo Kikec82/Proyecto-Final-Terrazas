@@ -65,8 +65,11 @@ class EditProfile extends Component {
                         <h4>Email</h4> <input type="text" name="email" onChange={e => this.handleChange(e)} value={this.state.email} />
                         <h4>Foto de perfil</h4> <input type="file" name="image" onChange={e => this.handleChange(e)} value={this.state.image} />
                         <h4>Ciudad</h4> <input type="text" name="city" onChange={e => this.handleChange(e)} value={this.state.city} />
-
-                        <button className="btn btn-success"> Modificar </button>
+                        
+                        <div>
+                        <br></br>
+                            <button className="btn btn-success"> Modificar </button>
+                        </div>
                     </form>
                     <br></br>
                 </div>

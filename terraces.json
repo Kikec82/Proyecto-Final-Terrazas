@@ -1,0 +1,226 @@
+[{
+  "_id": {
+    "$oid": "610038abb2a8ea0094025d86"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Bar Los Funcionarios",
+  "terraceCity": "Madrid",
+  "rating": 8,
+  "createdAt": {
+    "$date": "2021-07-27T16:47:39.638Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:47:39.638Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003901b2a8ea0094025d90"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Urban Coffee",
+  "terraceCity": "Madrid",
+  "rating": 3,
+  "createdAt": {
+    "$date": "2021-07-27T16:49:05.764Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:49:05.764Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003970b2a8ea0094025d96"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Bar Quevedo",
+  "terraceCity": "Madrid",
+  "rating": 5,
+  "createdAt": {
+    "$date": "2021-07-27T16:50:56.327Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:50:56.327Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610039b2b2a8ea0094025d9c"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "La Manduca",
+  "terraceCity": "Madrid",
+  "rating": 7,
+  "createdAt": {
+    "$date": "2021-07-27T16:52:02.435Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:52:02.435Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610039efb2a8ea0094025da2"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Plaza de Santa Ana",
+  "terraceCity": "Madrid",
+  "rating": 3,
+  "createdAt": {
+    "$date": "2021-07-27T16:53:03.495Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:53:03.495Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003a5eb2a8ea0094025da8"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Museo del Jamón",
+  "terraceCity": "Madrid",
+  "rating": 5,
+  "createdAt": {
+    "$date": "2021-07-27T16:54:54.805Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:54:54.805Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003af3b2a8ea0094025db7"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "La Esquinita",
+  "terraceCity": "Madrid",
+  "rating": 2,
+  "createdAt": {
+    "$date": "2021-07-27T16:57:23.796Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:57:23.796Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003b37b2a8ea0094025dbd"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Cigarral de las Mercedes",
+  "terraceCity": "Toledo",
+  "rating": 9,
+  "createdAt": {
+    "$date": "2021-07-27T16:58:31.741Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:58:31.741Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003bb7b2a8ea0094025dc3"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "100 Montaditos",
+  "terraceCity": "Madrid",
+  "rating": 6,
+  "createdAt": {
+    "$date": "2021-07-27T17:00:39.674Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:00:39.674Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003c01b2a8ea0094025dc9"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Rincón de Jaén",
+  "terraceCity": "Madrid",
+  "rating": 5,
+  "createdAt": {
+    "$date": "2021-07-27T17:01:53.699Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:01:53.699Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003d0eb2a8ea0094025dd8"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Hotel Riu Plaza España",
+  "terraceCity": "Madrid",
+  "rating": 7,
+  "createdAt": {
+    "$date": "2021-07-27T17:06:22.381Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:06:22.381Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003da1b2a8ea0094025ddf"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Terraza Corona ",
+  "terraceCity": "Madrid",
+  "rating": 8,
+  "createdAt": {
+    "$date": "2021-07-27T17:08:49.668Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:08:49.668Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003e4cb2a8ea0094025dea"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "La plazuela",
+  "terraceCity": "Valencia",
+  "rating": 6,
+  "createdAt": {
+    "$date": "2021-07-27T17:11:40.966Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:11:40.966Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610102b7b2a8ea0094025e2e"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "Jardín Campo del Moro",
+  "terraceCity": "Madrid",
+  "rating": 7,
+  "createdAt": {
+    "$date": "2021-07-28T07:09:43.401Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T07:09:43.401Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6101480e667ab51b18ebf197"
+  },
+  "numberOfRatings": 0,
+  "terraceName": "La Prospe",
+  "terraceCity": "Madrid",
+  "rating": 6,
+  "createdAt": {
+    "$date": "2021-07-28T12:05:34.893Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T12:05:34.893Z"
+  },
+  "__v": 0
+}]

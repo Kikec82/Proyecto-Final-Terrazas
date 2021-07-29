@@ -30,16 +30,16 @@ router.post('/new', (req, res) => {
     const { terrace, comments } = req.body
 
     const user = req.session.currentUser._id
-
+    
+    const { tableDistance, booking, music, outdoors, image } = req.body
     const features = {
-        tableDistance: req.body.tableDistance ? req.body.tableDistance : '',
-        booking: req.body.booking ? true : false,
-        music: req.body.music ? true : false,
-        outdoors: req.body.outdoors ? req.body.outdoors : '',
-        image: req.body.image ? req.body.image : '',
+        tableDistance: tableDistance || '',
+        booking: booking || false,
+        music: music || false,
+        outdoors: outdoors || '',
+        image: image || '',
     }
-
-    //const experience ={username,comments,rating} =req.body
+   
     Experience
         .create({ username: req.session.currentUser.username, terrace, features, comments })
         .then(newExperience => res.json(newExperience))

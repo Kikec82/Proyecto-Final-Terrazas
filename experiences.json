@@ -1,0 +1,415 @@
+[{
+  "_id": {
+    "$oid": "610038abb2a8ea0094025d88"
+  },
+  "features": {
+    "tableDistance": "más de 2 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404457/iyuouwkyegb8tgfyjwte.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Bastante distancia entre mesas, zona tranquila sin coches.",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "610038abb2a8ea0094025d86"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:47:39.652Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:47:39.652Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003901b2a8ea0094025d92"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404543/u77szjoazje02he7lzcs.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Poco espacio entre mesas y gente pasando al lado",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003901b2a8ea0094025d90"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:49:05.778Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:49:05.778Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003970b2a8ea0094025d98"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404654/hiwo73rvaoh336daw5ty.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Espacio entre mesas, pero no más. Máximo 2 pax por mesa",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003970b2a8ea0094025d96"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:50:56.338Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:50:56.338Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610039b2b2a8ea0094025d9e"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404720/yphpqtuvzgs8bblkwpnm.jpg",
+    "music": false,
+    "outdoors": "Semicubierta"
+  },
+  "comments": "Dependiendo de la mesa, puede haber más o menos distancia entre mesas.",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "610039b2b2a8ea0094025d9c"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:52:02.449Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:52:02.449Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610039efb2a8ea0094025da4"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404781/prlnmsottpppohbyfmth.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Muy turístico, muy masificado, mesas colocadas por todas partes, y continuo paso de gente y coches",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "610039efb2a8ea0094025da2"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:53:03.507Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:53:03.507Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003a5eb2a8ea0094025daa"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404893/qfo11v949a1hcqqjkdwa.jpg",
+    "music": false,
+    "outdoors": "Semicubierta"
+  },
+  "comments": "Poco espacio entre mesas, puede estar muy llena a partir de las 19:00",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003a5eb2a8ea0094025da8"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:54:54.817Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:54:54.817Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003af3b2a8ea0094025db9"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405042/schidvyw6d5j1ulmnjbu.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Parece cualquier cosa menos una terraza. casi mejor ir a un banco de la calle.",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003af3b2a8ea0094025db7"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:57:23.807Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:57:23.807Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003b37b2a8ea0094025dbf"
+  },
+  "features": {
+    "tableDistance": "más de 2 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405103/mhbu2a6h9sdcss1aceor.jpg",
+    "music": true,
+    "outdoors": "Abierta"
+  },
+  "comments": "Muchísimas zonas al aire libre y con distancia, sin problema de espacio, para grupos grandes. Piscina",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003b37b2a8ea0094025dbd"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T16:58:31.753Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:58:31.753Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003bb7b2a8ea0094025dc5"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405233/f7kgr2jhtx5oscvyxyee.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Depende de cual sea varia la distancia. En este caso estaban algunas más juntas que otras. Intentar acudir pronto para coger sitio.",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003bb7b2a8ea0094025dc3"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:00:39.683Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:00:39.683Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003c01b2a8ea0094025dcb"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405312/nqd346w5mhckqbcxqmhw.jpg",
+    "music": false,
+    "outdoors": "Semicubierta"
+  },
+  "comments": "Terraza con toldo y paredes moviles",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003c01b2a8ea0094025dc9"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:01:53.708Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:01:53.708Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003c36b2a8ea0094025dd0"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405362/syijdzkwu3pg1oxevkif.jpg",
+    "music": true,
+    "outdoors": "Abierta"
+  },
+  "comments": "Muy buena distacia",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61003bb7b2a8ea0094025dc3"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:02:46.100Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:02:46.100Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003d0eb2a8ea0094025dda"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405580/vxt3grpwamvsbbgenrnb.jpg",
+    "music": true,
+    "outdoors": "Abierta"
+  },
+  "comments": "Muy turístico, muy masificado, mesas colocadas por todas partes sin espacio para estar tranquilo. Vistas espectaculares",
+  "username": "juan",
+  "terrace": {
+    "$oid": "61003d0eb2a8ea0094025dd8"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:06:22.390Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:06:22.390Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003da1b2a8ea0094025de1"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405727/q4pvxvjucg3yoof6cuey.jpg",
+    "music": true,
+    "outdoors": "Semicubierta"
+  },
+  "comments": "Mucho espacio, música, mejor reservar",
+  "username": "juan",
+  "terrace": {
+    "$oid": "61003da1b2a8ea0094025ddf"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:08:49.678Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:08:49.678Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003e4cb2a8ea0094025dec"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627405882/kigz30n3nlmo5x3n3vfo.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Mejor hora para ir es en el  desayuno",
+  "username": "juan",
+  "terrace": {
+    "$oid": "61003e4cb2a8ea0094025dea"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:11:40.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:11:40.974Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003ecbb2a8ea0094025df1"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627406025/nbcm7ij3im7uxo07hock.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Hay nuevas medidas u han puesto menos aforo",
+  "username": "juan",
+  "terrace": {
+    "$oid": "61003901b2a8ea0094025d90"
+  },
+  "createdAt": {
+    "$date": "2021-07-27T17:13:47.679Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T17:13:47.679Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610102b7b2a8ea0094025e30"
+  },
+  "features": {
+    "tableDistance": "1,5-2 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627456181/qjy8crsovjdmr3leir9l.jpg",
+    "music": true,
+    "outdoors": "Abierta"
+  },
+  "comments": "Espaciosa , sombra por la tarde, muy tranquila.",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "610102b7b2a8ea0094025e2e"
+  },
+  "createdAt": {
+    "$date": "2021-07-28T07:09:43.411Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T07:09:43.411Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61014776667ab51b18ebf189"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": false,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627473780/mhimqgvftyx6kfpcygio.jpg",
+    "music": false,
+    "outdoors": "Abierta"
+  },
+  "comments": "Poco espacio entre mesas",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "61014776667ab51b18ebf187"
+  },
+  "createdAt": {
+    "$date": "2021-07-28T12:03:02.326Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T12:03:02.326Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6101480e667ab51b18ebf199"
+  },
+  "features": {
+    "tableDistance": "0-1'5 metros",
+    "booking": true,
+    "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627473932/qczeoehiqhrh7qesf0c2.jpg",
+    "music": false,
+    "outdoors": "Semicubierta"
+  },
+  "comments": "Gran terraza pero con distancia justa entre mesas.",
+  "username": "Kike",
+  "terrace": {
+    "$oid": "6101480e667ab51b18ebf197"
+  },
+  "createdAt": {
+    "$date": "2021-07-28T12:05:34.914Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T12:05:34.914Z"
+  },
+  "__v": 0
+}]

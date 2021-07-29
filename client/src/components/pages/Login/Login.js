@@ -35,9 +35,11 @@ class Login extends Component {
     render() {
 
         return (
+            
             <div className="login">
-
+                    
                 <h2>Iniciar Sesion</h2>
+                
                 <form onSubmit={this.handleFormSubmit}>
 
                     <h4>Usuario</h4> <input type="text" name="username" onChange={e => this.handleChange(e)} />
@@ -46,11 +48,10 @@ class Login extends Component {
                         <br></br>
                         <button className="btn btn-success"> Entrar </button>
                     </div>
-
                 </form>
             </div>
         )
-    }
+       }
 }
 
 export default Login

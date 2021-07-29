@@ -3,6 +3,7 @@ import { Form, Button } from "react-bootstrap"
 import ExperiencesService from '../../../services/experience.service'
 import TerracesService from '../../../services/terraces.service'
 import UploadsService from '../../../services/upload.service'
+import { LocationSearchInput } from '../../AutocompleteAddress/AutocompleteAddress'
 
 
 class NewTerraceReview extends Component {
@@ -20,7 +21,9 @@ class NewTerraceReview extends Component {
             outdoors: "Abierta",
             image: '',
             imageFile: undefined,
-            loading: false
+            loading: false,
+            lat: '',
+            lng: ''
         }
         this.terracesService = new TerracesService()
         this.experienceService = new ExperiencesService()
@@ -30,7 +33,7 @@ class NewTerraceReview extends Component {
     handleFormSubmit = e => {
         e.preventDefault()
 
-        const { terrace, terraceCity, terraceName, comments, rating, tableDistance, booking, music, outdoors, image } = this.state
+        const { terrace, terraceCity, terraceName, comments, rating, tableDistance, booking, music, outdoors, image, lat, lng} = this.state
 
         this.saveExperience({ terrace, terraceCity, terraceName, comments, rating, tableDistance, booking, music, outdoors, image })
     }
@@ -82,6 +85,7 @@ class NewTerraceReview extends Component {
             })
             .catch(err => console.log(err))
     }
+    
 
 
 
@@ -99,7 +103,14 @@ class NewTerraceReview extends Component {
                             <Form.Label>Ciudad</Form.Label>
                             <Form.Control type="text" value={this.state.terraceCity} onChange={this.handleChange} name="terraceCity" />
 
-
+                            <Form.Label>Latitud </Form.Label>
+                            <Form.Control value={this.state.lat} onChange={this.handleChange} name="lat" />
+                            <Form.Label>Longitud </Form.Label>
+                            <Form.Control value={this.state.lng} onChange={this.handleChange} name="lng" />
+                            <Form.Label>Ubicación GPS</Form.Label>
+                            <LocationSearchInput></LocationSearchInput>
+                            
+                            
                             <Form.Label>Puntuación</Form.Label>
                             <Form.Control value={this.state.rating} onChange={this.handleChange} as="select" name="rating">
                                 <option value="1" >1</option>
@@ -149,7 +160,7 @@ class NewTerraceReview extends Component {
                         </Form.Group>
 
                         <br></br>
-                        <Button disabled={this.state.loading} type="submit"> Guardar </Button>
+                        <Button disabled={this.state.loading} type="submit" className="btn btn-success"> Guardar </Button>
                     </div>
                 </Form>
             </div>

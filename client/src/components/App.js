@@ -10,7 +10,6 @@ import Footer from './layout/Footer/Footer'
 
 
 
-
 class App extends Component {
   constructor() {
     super();
@@ -40,6 +39,8 @@ class App extends Component {
         
         <Routes storeUser={this.storeUser} loggedUser={this.state.loggedUser} />
 
+   
+ 
         <Footer />
       </>
     );

@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 })
 // Editar usuario
 router.get('/edit/:userId', (req, res, next) => {
-     console.log(req.params.id)
+    console.log(req.params.id)
     User
         .findById(req.params.userId)
         .then(response => res.json(response))
@@ -27,17 +27,12 @@ router.get('/edit/:userId', (req, res, next) => {
 router.post('/edit/:userId', CDNupload.single('image'), (req, res) => {
 
     const { username, pwd, city, email, image } = req.body
-    let path
-    if (req.file === undefined) {
-        path = req.session.currentUser.image
-    } else {
-        path = req.file.path
-    }
+    let path = req.file === undefined ? req.session.currentUser.image : req.file.path
 
     const { userId } = req.params
 
     User
-        .findByIdAndUpdate(userId, { username, pwd,city, email, image: path })
+        .findByIdAndUpdate(userId, { username, pwd, city, email, image: path })
         .then(() => {
             res.json(userId)
         })

@@ -7,6 +7,7 @@ import NewTerrace from '../pages/NewTerrace/NTReview'
 import TerraceList from '../pages/TerraceList/TerraceList'
 import TerraceDetails from '../pages/TerraceDetails/TDetails'
 import EditProfile from '../pages/EditProfile/EditProfile'
+import ClosePage from '../pages/ClosePage.js/ClosePage'
 
 
 const Routes = ({ storeUser, loggedUser }) => {
@@ -21,6 +22,7 @@ const Routes = ({ storeUser, loggedUser }) => {
             <Route path="/terracelist" render={() => <TerraceList />} />
             <Route path="/terracedetails/:id" render={props => <TerraceDetails {...props} />} />
             <Route path="/newterrace" render={props => <NewTerrace {...props} />} />
+            <Route path="/close" render={()=><ClosePage/>}/>
 
         </Switch>
     )

@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "60ffd8fe87d52c3eac6a4319"
+  },
+  "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627379959/nlghszuk4hjxyumi6qup.jpg",
+  "username": "juan",
+  "password": "$2b$10$5O157IluftUenMLVi9gJ2.27f/k8AKL/A62ESDjmJGjYuQ25m3QmS",
+  "city": "Madrid",
+  "email": "juan@gmail.com",
+  "createdAt": {
+    "$date": "2021-07-27T09:59:26.990Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-27T16:17:33.425Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61003826b2a8ea0094025d82"
+  },
+  "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627404324/wl5makl9wjpmkr0zwi9w.jpg",
+  "username": "Kike",
+  "password": "$2b$10$dfQZEYxloNyHr50hpAh2feQDKvFKMK7xDttxLp06CwaqQ4UumU4e.",
+  "city": "",
+  "email": "",
+  "createdAt": {
+    "$date": "2021-07-27T16:45:26.312Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-29T07:07:55.434Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6101323578aa1750bc207562"
+  },
+  "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627468338/ox9kq7sjnbzcrylohjxj.jpg",
+  "username": "Maria",
+  "password": "$2b$10$KhQq/1WJAYkDhEZbAEgFHe.cNPuo3jfiojJs9KRy/cTOfC6B/TyGO",
+  "city": "Huelva",
+  "email": "maria@maria.com",
+  "createdAt": {
+    "$date": "2021-07-28T10:32:21.742Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T10:32:21.742Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6101b187ae5f503fa03df105"
+  },
+  "image": "https://res.cloudinary.com/dd3o8nifm/image/upload/v1627500932/yy54ni3emoxlnapkppdq.jpg",
+  "username": "Paco",
+  "password": "$2b$10$f5kfd9ksKNJigFtWQ0U4nem8JJUr5Ap7b6wRXcPKsoqwHi0H6Xb7O",
+  "city": "Barcelona",
+  "email": "paco@paco.com",
+  "createdAt": {
+    "$date": "2021-07-28T19:35:35.943Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T19:35:35.943Z"
+  },
+  "__v": 0
+}]

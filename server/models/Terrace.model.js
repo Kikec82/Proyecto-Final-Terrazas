@@ -20,10 +20,18 @@ const terraceSchema = new Schema(
       type: Number,
       default: 0,
       required: true
+    }, 
+    location: {
+      type: {
+        type: String
+      },
+      coordinates: [Number]
     }
   },
   { timestamps: true }
 )
+
+terraceSchema.index({ location: '2dsphere' });
 
 const Terrace = model("Terrace", terraceSchema)
 
